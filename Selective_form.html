@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Course Registration</title>
+</head>
+<body>
+	<form action="action/form.php" method="post" target="_blank">
+  <legend><h4>Registration</h4></legend>
+  <br>
+    <label for="Uname">Name:</label>
+    <input type="text" name="name" id="Uname"/>
+    <br><br/>
+    <label for="PhoneNum">Phone Number:</label>
+    <input type="number" name="Phno" id="PhoneNum">
+    <br>
+    <label for="Course"><h4>Select a Course:</h4></label>
+    <input type="radio"  name="Degree" id="Bachelors" value="Bachelors">
+    <label for="Bachelors"> Bachelors</label><br>
+    <input type="radio"  name="Degree" id="Masters" value="Masters">
+    <label for="Masters"> Masters</label><br><br>
+    <b>Description</b><br>
+    <textarea name="Decription" rows="10" cols="40">
+    </textarea><br>
+    <b>Subject Interests</b><br><br>
+    <input type="checkbox" id="Electronics" name="Subject" value="Electronics">
+    <label for="vehicle1"> Electronics</label><br>
+    <input type="checkbox" id="Computer_Science" name="Subject" value="Computer_Science">
+    <label for="vehicle2"> Computer Science</label><br>
+    <input type="checkbox" id="Chemical_Sciences" name="Subject" value="Chemical_Sciences">
+    <label for="vehicle3"> Chemical Science</label><br><br>
+
+    <input type="submit" value="submit"/>
+</form>
+
+</body>
+</html>
