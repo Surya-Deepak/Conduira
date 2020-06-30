@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="Javascript" type="text/Javascript" href="day2.js">
+</head>
+<body>
+<label for="Number">Start ----> </label>
+<input type="submit" name="submit" onclick="fib(prompt('Enter a number'))">
+</body>
+<script type="text/javascript">
+	function fib(n){
+	if(n>10 && n<100)
+	{
+  let arr = [0, 1];
+  for (let i = 2; i < n + 1; i++){
+    arr.push(arr[i - 2] + arr[i -1])
+  }
+ for (var i = 0; i < n; i++) {
+ 	document.write(arr[i]);
+ 	document.write("\n");
+
+ }
+}
+else{
+	alert('Input a number between 10 and 100');
+	return false;
+}
+}
+</script>
+</html>
