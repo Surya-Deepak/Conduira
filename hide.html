@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hide demo</title>
+  <style>
+  p {
+    font-weight: bold;
+  }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+</head>
+<body>
+ 
+<button>Do you wanna hide... ?</button>
+<p>Surya</p>
+<p>Good to go?</p>
+ 
+<script>
+$( "button" ).click(function() {
+  $( "p" ).hide( "slow" )
+  document.write("Hid the text");
+});
+</script>
+ 
+</body>
+</html>
